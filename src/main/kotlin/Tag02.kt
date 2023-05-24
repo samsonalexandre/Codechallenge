@@ -1,5 +1,3 @@
-import java.io.DataInput
-
 fun main(args: Array<String>) {
     val items = mutableListOf("apple", "banana", "orange")
 
@@ -29,19 +27,18 @@ fun main(args: Array<String>) {
         println(i)
 
     println("Tippe eine Zahl") // String to Int
-    var a = readln()
-    var aInt = a.toUInt()
+    var a = readln().toUInt()
 
     println("Tippe eine Zahl") // String to Int
-    var b = readln()
-    var bInt = b.toUInt()
-    var sum = aInt + bInt
+    var b = readln().toUInt()
+
+    var sum = a + b
 
     println("Summa von deinen Zahlen ist $sum")
 
     println()
 
-    testWhen("1")
+    testWhen("1767676767")
 
     for(q in 0..100 % 2) // Sort
         println(q)
